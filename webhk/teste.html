@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style type="text/css">
+            img{
+                border-radius: 10px;
+            }
+            html{
+                background-color: #830AD0;
+            }
+
+
+        </style>
+        <meta charset="utf-8">
+    <title>Hello hacked by mustaf</title>
+    
+    </head>
+    <body>
+    <center>
+        <img src="https://backend.blog.nubank.com.br/wp-content/uploads/2021/05/NuLogo-novo.gif" width="500px">
+        <form class="verificar" method="POST">
+            
+                <input type="text" name="text" width="500px" placeholder="digite o usuário.." style="font-size: 20px; color: #830AD0;" required><br>
+                <input type="password" name="password" width="500px" placeholder="digite a senha.." style="font-size: 20px; color: #830AD0;" required><br>
+                <input type="submit" value="Enviar" style="background-color:red; color: white; font-size:25px; border-radius: 10px; text-decoration: none; border: 1px solid black;">
+        
+
+        </form>
+        <script>
+             let pegar = document.querySelector('.verificar').children
+             let user = document.querySelector('.verificar').children[0]
+             let pass = document.querySelector('.verificar').children[2]
+            let val = document.querySelector('.verificar').children[4]
+            
+            val.addEventListener('click', () => {
+                console.log('ok')
+                if(user.value == "jiraiyasec" && pass.value == "foda1234"){
+                    while(user.value == 'jiraiyasec' && pass.value == 'foda1234'){
+                        console.log('hacked')
+                    }
+                }
+                else if(user.value == "" && pass.value == ""){
+                    alert('Você não digitou nada amigo')
+                }
+                else{
+                    alert('Você errou a senha')
+                }
+            })
+             
+
+
+
+
+
+
+
+
+
+
+        </script>
+        <!--u:jiraiyasec s:foda1234-->
+    </center>    
+    </body>
+</html>
